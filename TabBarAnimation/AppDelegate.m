@@ -8,7 +8,15 @@
 
 #import "AppDelegate.h"
 
+#import "RootTabBarViewController.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
+
+
+
 @interface AppDelegate ()
+
 
 @end
 
@@ -17,8 +25,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+   
+    self.window.rootViewController = [[RootTabBarViewController alloc] init];
+    
     return YES;
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
